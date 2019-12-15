@@ -1,0 +1,17 @@
+@charset "UTF-8";
+html{
+    font-size: 62.5%;
+}
+
+.title{
+    color: blue;
+    font-size: 300%;
+}
+
+.test_text{
+    font-size: 200%;
+}
+
+.test_table{
+    font-size: 200%;
+}

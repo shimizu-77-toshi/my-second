@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>{{TITLE}}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "app/css/style.css" %}">
+</head>
+
+<body>
+ <h1 class="title">{{NAME}}</h1>
+ <p class="test_text">{{ TEXT }}</p>
+ <table class="test_table">
+ <form action="{% url 'form' %}" method="post">
+     {% csrf_token %}
+     {{ FORM.as_table }}
+     <tr>
+         <td>
+         </td>
+         <td>
+         <input type="submit" value="結果を見る">
+         </td>
+     </tr>
+ </form>
+ </table>
+</body>
+</html>
